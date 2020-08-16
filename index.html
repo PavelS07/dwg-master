@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -120,13 +121,32 @@
       <h2 class="main-title text-center">
         Портфолио
       </h2>
-      <div class="portfolio-content">
-        <img src="img/portfolio-arrow-left.svg" alt="Стрелка влево" class="portfolio-arrow-left">
-        <div class="portfolio-main">
-          <span class="portfolio-title-img">Разрез сисек</span>
-          <img src="img/portfolio/portfolio-exm1.png" alt="Пример работы" class="portfolio-img materialboxed">
+      <div class="portfolio-content swiper-container">
+        <img src="img/portfolio-arrow-left.svg" alt="Стрелка влево" class="portfolio-arrow-left swiper-button-prev">
+        <div class="portfolio-main swiper-wrapper">
+          <div class="job swiper-slide">
+            <span class="portfolio-title-img">Разрез сисек</span>
+            <div class="swiper-zoom-container materialboxed">
+              <img src="img/portfolio/portfolio-exm1.png" alt="Пример работы" class="portfolio-img">
+            </div>
+          </div>
+          <!-- /.job -->
+          <div class="job swiper-slide">
+            <span class="portfolio-title-img">Разрез писек</span>
+            <div class="swiper-zoom-container">
+              <img src="img/portfolio/portfolio-exm2.png" alt="Пример работы" class="portfolio-img">
+            </div>
+          </div>
+          <!-- /.job -->
+          <div class="job swiper-slide">
+            <span class="portfolio-title-img">Разрез писек2</span>
+            <div class="swiper-zoom-container">
+              <img src="img/portfolio/portfolio-exm3.png" alt="Пример работы" class="portfolio-img">
+            </div>
+          </div>
+          <!-- /.job -->
         </div>
-        <img src="img/portfolio-arrow-right.svg" alt="Стрелка вправо" class="portfolio-arrow-right">
+        <img src="img/portfolio-arrow-right.svg" alt="Стрелка вправо" class="portfolio-arrow-right swiper-button-next">
       </div>
     </div>
     <!-- /.container -->
@@ -454,6 +474,7 @@
   
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
