@@ -4,9 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileImage" content="favicons/ms-icon-70x70.png">
   <title>AutoCAD - красивые чертежи</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="favicons/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="favicons/android-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" href="favicons/apple-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -19,28 +27,434 @@
       </a>
     </div>
     <!-- /.logo -->
-    <nav class="navigatoin">
+    <div class="navigation">
       <ul class="navigation-block-link">
         <a href="#" class="navigation-link">
-          <li class="navigation-item">Портфолио</li>
+          <li class="navigation-item" id="portfolio-link">Портфолио</li>
         </a>
         <a href="#" class="navigation-link">
-          <li class="navigation-item">Услуги</li>
+          <li class="navigation-item" id="services-link">Услуги</li>
         </a>
         <a href="#" class="navigation-link">
-          <li class="navigation-item">Цены</li>
+          <li class="navigation-item" id="price-link">Цены</li>
         </a>
         <a href="#" class="navigation-link">
-          <li class="navigation-item">Заказать чертеж</li>
+          <li class="navigation-item" id="order-link">Заказать чертеж</li>
         </a>
       </ul>
-    </nav>
-    <!-- /.navigatoin -->
+    </div>
+    <!-- /.navigation -->
     <a href="#" class="navigation-link">
-      <li class="navigation-item-end">О Нас</li>
+      <li class="navigation-item-end" id="about-link">О Нас</li>
     </a>
+    <button class="m-menu-button sidenav-trigger" data-target="slide-out">
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </button>
   </header>
   <!-- /.header -->
+  <section class="main">
+    <div class="container main">
+      <div class="main-info">
+        <h2 class="main-title">
+          Чертежи для студентов
+        </h2>
+        <p class="main-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Urna, integer sollicitudin odio proin. Ac volutpat quam semper sit blandit eget tortor.
+          Sed tellus donec quis nunc donec nisi, placerat aliquam amet.
+          Purus dignissim volutpat, aliquet quis porttitor faucibus vitae.
+          В основном наш проект заточен на быструю и качественную помощь студентам.
+        </p>
+      </div>
+      <!-- /.main-info -->
+      <img src="img/main.jpg" alt="Главная картинка" class="main-img">
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.main -->
+  <section class="services">
+    <div class="container services">
+      <h2 class="main-title text-center">
+        Наши услуги
+      </h2>
+      <div class="services-content-autocad">
+        <img src="img/autocad.jpg" alt="Автокад картинка" class="autocad-img">
+        <div class="services-info">
+          <h3 class="services-title">
+            Чертежи в программе AutoCad
+          </h3>
+          <ul class="list-services">
+            <li class="list-services-item">Чертеж для диплома</li>
+            <li class="list-services-item">Чертеж для курсовой работы</li>
+            <li class="list-services-item">Чертеж промежуточной контрольной работы</li>
+            <li class="list-services-item">Реальный проект</li>
+            <li class="list-services-item">Оцифровка чертежей</li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.services-content-autocad -->
+      <div class="services-content-compass">
+        <div class="services-info">
+          <h3 class="services-title">
+            Чертежи в программе КОМПАС
+          </h3>
+          <ul class="list-services">
+            <li class="list-services-item">Чертеж для диплома</li>
+            <li class="list-services-item">Чертеж для курсовой работы</li>
+            <li class="list-services-item">Чертеж промежуточной контрольной работы</li>
+            <li class="list-services-item">Реальный проект</li>
+            <li class="list-services-item">Оцифровка чертежей</li>
+          </ul>
+        </div>
+        <img src="img/compass.jpg" alt="Автокад картинка" class="compass-img">
+      </div>
+      <!-- /.services-content-compass -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.services -->
+  <section class="portfolio">
+    <div class="container portfolio">
+      <h2 class="main-title text-center">
+        Портфолио
+      </h2>
+      <div class="portfolio-content">
+        <img src="img/portfolio-arrow-left.svg" alt="Стрелка влево" class="portfolio-arrow-left">
+        <div class="portfolio-main">
+          <span class="portfolio-title-img">Разрез сисек</span>
+          <img src="img/portfolio/portfolio-exm1.png" alt="Пример работы" class="portfolio-img materialboxed">
+        </div>
+        <img src="img/portfolio-arrow-right.svg" alt="Стрелка вправо" class="portfolio-arrow-right">
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.portfolio -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="main-title text-center">
+        Отзывы наших клиентов
+      </h2>
+      <div class="reviews-content">
+        <img src="img/reviews-arrow-left.svg" alt="Стрелка влево" class="reviews-arrow-left">
+        <div class="reviews-main">
+          <div class="card">
+            <div class="card-title">
+              <span class="card-name">David</span>
+              <span class="card-date">27.11.2020</span>
+            </div>
+            <div class="card-rating">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Feugiat velit convallis dictum diam purus id nibh.
+              Lorem donec pulvinar senectus turpis volutpat adipiscing.
+              Dictum adipiscing aliquam etiam nisi cras convallis tempus, felis aliquam.
+              Eget sit vestibulum donec sem orci ullamcorper sed iaculis.
+            </p>
+          </div>
+          <!-- /.card -->
+          <div class="card">
+            <div class="card-title">
+              <span class="card-name">David</span>
+              <span class="card-date">27.11.2020</span>
+            </div>
+            <div class="card-rating">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Feugiat velit convallis dictum diam purus id nibh.
+              Lorem donec pulvinar senectus turpis volutpat adipiscing.
+              Dictum adipiscing aliquam etiam nisi cras convallis tempus, felis aliquam.
+              Eget sit vestibulum donec sem orci ullamcorper sed iaculis.
+            </p>
+          </div>
+          <!-- /.card -->
+          <div class="card">
+            <div class="card-title">
+              <span class="card-name">David</span>
+              <span class="card-date">27.11.2020</span>
+            </div>
+            <div class="card-rating">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+              <img src="img/rating.svg" alt="Рейтинг +1" class="rating-img">
+            </div>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Feugiat velit convallis dictum diam purus id nibh.
+
+            </p>
+          </div>
+          <!-- /.card -->
+        </div>
+        <img src="img/reviews-arrow-right.svg" alt="Стрелка вправо" class="reviews-arrow-right">
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.reviews -->
+  <section class="social-reviews">
+    <div class="container">
+      <h2 class="main-title text-center">
+        Отзывы из социальных сетей
+      </h2>
+      <p class="pre-text text-center">
+        Посмотреть или оставить отзыв можно в группе: <a href="#" class="group-vk">vk.com/dwg-master</a>
+      </p>
+      <div class="social-reviews-content">
+        <img src="img/reviews-arrow-left.svg" alt="Стрелка влево" class="reviews-arrow-left">
+        <div class="reviews-main">
+          <div class="card">
+            <img src="img/social-comments/social-comment.jpg" alt="Комментарии из социальной сети"
+              class="social-comment-img materialboxed">
+          </div>
+          <!-- /.card -->
+          <div class="card">
+            <img src="img/social-comments/comment2.png" alt="Комментарии из социальной сети" class="social-comment-img materialboxed">
+          </div>
+          <!-- /.card -->
+          <div class="card">
+            <img src="img/social-comments/social-comment.jpg" alt="Комментарии из социальной сети"
+              class="social-comment-img materialboxed">
+          </div>
+          <!-- /.card -->
+        </div>
+        <img src="img/reviews-arrow-right.svg" alt="Стрелка вправо" class="reviews-arrow-right">
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.social-reviews -->
+  <section class="price">
+    <div class="container">
+      <h2 class="main-title text-center">
+        Цены
+      </h2>
+      <p class="pre-price-text text-center">Студентам 20% скидка на любую работу!</p>
+      <p class="after-price-text text-center">*Цена может меняться в зависимости от сложности работы,
+        все цены обговариваются лично с исполнителем заказа.
+      </p>
+      <div class="price-content">
+        <div class="price-card">
+          <h4 class="price-title text-center">Работа в AutoCad</h4>
+          <div class="price-item">
+            Дипломный чертеж - от 500 руб.
+          </div>
+          <div class="price-item">
+            Курсовой проект - от 300 руб.
+          </div>
+          <div class="price-item">
+            Контрольная работа - от 150 руб.
+          </div>
+          <div class="price-item">
+            Реальный проект - от 2000 руб.
+          </div>
+          <div class="price-item">
+            Оцифровка чертежа - от 100 руб.
+          </div>
+        </div>
+        <!-- /.price-card -->
+        <div class="price-card">
+          <h4 class="price-title text-center">Работа в КОМПАС</h4>
+          <div class="price-item">
+            Дипломный чертеж - от 500 руб.
+          </div>
+          <div class="price-item">
+            Курсовой проект - от 300 руб.
+          </div>
+          <div class="price-item">
+            Контрольная работа - от 150 руб.
+          </div>
+          <div class="price-item">
+            Реальный проект - от 2000 руб.
+          </div>
+          <div class="price-item">
+            Оцифровка чертежа - от 100 руб.
+          </div>
+        </div>
+        <!-- /.price-card -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.price -->
+  <section class="order">
+    <div class="container">
+      <h2 class="main-title text-center">
+        Заказать чертеж
+      </h2>
+      <p class="pre-order-text text-center">
+        Вы можете написать напрямую специалисту в VK или оставить заявку в форме.
+        <br />
+        Ссылка на страницу в VK: <a href="https://vk.com/id139526069">vk.com/id139526069</a> - Дарья)
+      </p>
+      <div class="order-content">
+        <form action="" method="POST" class="col s12">
+          <div class="row">
+            <div class="input-field col s6 offset-s3 m4 offset-m4">
+              <input placeholder="Александр" id="first_name" type="text" class="validate" required>
+              <label for="first_name">Ваше Имя</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 offset-s3 m4 offset-m4">
+              <input id="email" type="email" class="validate" required>
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 offset-s3 m4 offset-m4">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Описание</label>
+              <span class="helper-text" data-error="wrong" data-success="right">Укажите необходимые замечания</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="file-field input-field col s6 offset-s3 m4 offset-m4">
+              <div class="btn">
+                <span class="btn-text">Добавить файл</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light btn-gray" type="submit" name="action">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.order -->
+  <section class="comment">
+    <div class="container">
+      <h2 class="main-title text-center">
+        Оставить отзыв
+      </h2>
+      <p class="pre-comment text-center">Мы будем очень рады отзыву, который Вы оставите здесь или в нашей группе ВК.
+      </p>
+      <div class="comment-content">
+        <form action="" method="POST">
+          <div class="row">
+            <div class="input-field col s6 offset-s3 m4 offset-m4">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate" required>
+              <label for="first_name">Ваше Имя</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 offset-s3 m4 offset-m4">
+              <textarea id="textarea2" class="materialize-textarea" required></textarea>
+              <label for="textarea2">Содержание</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 offset-s3 m2 offset-m4">
+              <span class="text-rating">Оценка</span>
+              <input type="range" id="test5" min="0" max="5" />
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light btn-gray" type="submit" name="action">Оставить отзыв</button>
+        </form>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.comment -->
+  <section class="about">
+    <div class="container">
+      <h2 class="main-title text-center">
+        О нас
+      </h2>
+      <div class="about-content">
+        <div class="about-row">
+          <img src="img/about2.jpg" alt="Картинка о нас" class="about-img">
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Mauris in vestibulum tristique in integer tortor mauris, lorem vitae. 
+            Amet sed dictumst viverra in iaculis pharetra hac eu vitae. 
+            Placerat sit mi amet montes, enim. Auctor quam egestas risus aliquam sagittis augue gravida auctor turpis. 
+            Ac amet, viverra sem sed justo sem odio quam sem. 
+            Ipsum mollis at molestie ultrices sagittis elementum orci adipiscing. 
+            Vulputate aliquet arcu felis non. At aliquet diam laoreet gravida. 
+            Orci eros, ornare sed tellus. Связаться со мной можно здесь <a href="http://vk.com/pavells07">vk.com/pavells07</a>
+          </p>
+        </div>
+        <!-- /.about-row -->
+        <div class="about-row">
+          <img src="img/about1.jpg" alt="Картинка о нас" class="about-img">
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Mauris in vestibulum tristique in integer tortor mauris, lorem vitae. 
+            Amet sed dictumst viverra in iaculis pharetra hac eu vitae. 
+            Placerat sit mi amet montes, enim. Auctor quam egestas risus aliquam sagittis augue gravida auctor turpis. 
+            Ac amet, viverra sem sed justo sem odio quam sem. 
+            Ipsum mollis at molestie ultrices sagittis elementum orci adipiscing. 
+            Vulputate aliquet arcu felis non. At aliquet diam laoreet gravida. 
+            Orci eros, ornare sed tellus. Связаться со мной можно здесь <a href="http://vk.com/pavells07">vk.com/pavells07</a>
+          </p>
+        </div>
+        <!-- /.about-row -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.about -->
+  <section class="payment">
+    <div class="container">
+      <h2 class="main-title text-center">
+        Способы оплаты
+      </h2>
+      <div class="payment-content">
+        <div class="payment-row">
+          <img src="img/qiwi.jpg" alt="Способ оплаты" class="payment-img">
+          <img src="img/sber.jpg" alt="Способ оплаты" class="payment-img">
+          <img src="img/yandex-money.jpg" alt="Способ оплаты" class="payment-img">
+        </div>
+        <div class="payment-row">
+          <img src="img/webmoney.jpg" alt="Способ оплаты" class="payment-img">
+          <img src="img/tinkoff.jpg" alt="Способ оплаты" class="payment-img">
+          <img src="img/vk-pay.jpg" alt="Способ оплаты" class="payment-img">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.payment -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#"><img src="img/vk.jpg" alt="Социальная сеть vk.com" class="social-img"></a>
+      <a href="#"><img src="img/instagramm.jpg" alt="Социальная сеть vk.com" class="social-img"></a>
+    </div>
+    <a href="dwg-master@mail.ru" class="mail">dwg-master@mail.ru</a>
+  </footer>
+
+  <ul class="navigation-block-link mobile-menu sidenav" id="slide-out">
+    <li class="mobile-navigation-item" id="portfolio-link">Портфолио</li>
+    <li class="mobile-navigation-item" id="services-link">Услуги</li>
+    <li class="mobile-navigation-item" id="price-link">Цены</li>
+    <li class="mobile-navigation-item" id="order-link">Заказать чертеж</li>
+    <li class="mobile-navigation-item" id="reviews-link">Отзывы</li>
+    <li class="mobile-navigation-item" id="about-link">О нас</li>
+  </ul>
+  <!-- /. mobile-menu -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
