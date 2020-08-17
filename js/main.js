@@ -46,11 +46,13 @@ $(document).ready(function () {
   // $('.portfolio-arrow-right').click(() => {
   //   $('.carousel').carousel('next');
   // });
-
-  var mySwiper = new Swiper('.swiper-container', {
+  
+  var mySwiper1 = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    centeredSlides: true,
+    hideOnClick: true,
 
     // If we need pagination
     pagination: {
@@ -61,6 +63,7 @@ $(document).ready(function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      hideOnClick: true,
     },
 
     // And if we need scrollbar
@@ -69,7 +72,6 @@ $(document).ready(function () {
     },
     
   })
-
 
   function scrollToElement(element) {
     $("html").animate({
