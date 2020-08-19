@@ -238,6 +238,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card:not(:last-child) {
@@ -487,14 +488,43 @@ body {
   border-radius: 40px;
 }
 
-.swiper-container2 .swiper-slide {
-  width: 500px;
-  /* height: 200px; */
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 250px;
+  height: 250px;
 }
+
+.carousel {
+  overflow: visible;
+  /* margin: auto; */
+  /* margin-right: 100px; */
+  /* margin-right: auto; */
+  width: 790px;
+}
+
+.carousel .carousel-item  {
+  left: -90px;
+}
+
 
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;
+  }
+
+  .reviews {
+    margin-bottom: 250px;
+    height: 195px;
+  }
+  
+  .carousel {
+    width: 590px;
+  }
+  
+  .carousel .carousel-item  {
+    left: 8px;
   }
 
   .logo-link {
@@ -590,6 +620,19 @@ body {
     max-width: 100%;
   }
 
+  .reviews {
+    margin-bottom: 350px;
+    height: 195px;
+  }
+
+  .carousel {
+    width: 590px;
+  }
+  
+  .carousel .carousel-item  {
+    left: 8px;
+  }
+
   .header {
     padding-right: 30px;
     padding-left: 30px;
@@ -652,8 +695,8 @@ body {
   }
 
   .card {
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    height: 500px;
   }
 
   .rating-img {
@@ -698,6 +741,18 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
+  }
+
+  .reviews {
+    margin-bottom: 350px;
+  }
+  
+  .carousel {
+    width: 450px;
+  }
+  
+  .carousel .carousel-item  {
+    left: 8px;
   }
 
   .header {
@@ -834,6 +889,20 @@ body {
     max-width: 100%;
   }
 
+  .reviews {
+    margin-bottom: 100px;
+  }
+  
+  .carousel {
+    width: 100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  
+  .carousel .carousel-item  {
+    left: 25px;
+  }
+
   .header {
     margin-bottom: 30px;
     padding-left: 15px;
@@ -891,8 +960,8 @@ body {
   }
 
   .card {
-    width: 90%;
-    height: 300px;
+    width: 80%;
+    height: 270px;
   }
 
   .reviews-arrow-left,

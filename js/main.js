@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  let width = $(window).width();
+
+  if(width <= 768) {
+    $('.materialboxed').removeClass('materialboxed');
+  }
 
   $('.header').click((event) => {
     let toElementString = event.target.id.split('-')[0];
@@ -38,14 +43,6 @@ $(document).ready(function () {
   //   noWrap: true, 
   //   numVisible: 1
   // });
-
-  // $('.portfolio-arrow-left').click(() => {
-  //   $('.carousel').carousel('prev');
-  // });
-
-  // $('.portfolio-arrow-right').click(() => {
-  //   $('.carousel').carousel('next');
-  // });
   
   var mySwiper1 = new Swiper('.swiper-container', {
     // Optional parameters
@@ -54,24 +51,44 @@ $(document).ready(function () {
     centeredSlides: true,
     hideOnClick: true,
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
       hideOnClick: true,
-    },
+    }    
+  });
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+  var mySwiperReviews = new Swiper('.swiper-container-reviews', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 3,
+    loop: false,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
     },
-    
-  })
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+
+  $('.carousel').carousel({
+    fullWidth: false,
+    numVisible: 3
+  });
+
+  $('.reviews-arrow-left').click(() => {
+    $('.carousel').carousel('prev');
+  });
+
+  $('.reviews-arrow-right').click(() => {
+    $('.carousel').carousel('next');
+  });
 
   function scrollToElement(element) {
     $("html").animate({
