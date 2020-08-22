@@ -324,7 +324,6 @@ body {
 
 .social-comment-img {
   width: 600px;
-  object-fit: cover;
   margin: auto;
 }
 
@@ -1103,10 +1102,9 @@ body {
 
   .social-comment-img {
     width: 95%;
-    height: 100%;
   }
 
   .slider {
-    height: 60px;
+    height: 70px;
   }
 }

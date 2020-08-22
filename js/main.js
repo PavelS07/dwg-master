@@ -3,6 +3,7 @@ $(document).ready(function () {
 
   if (width <= 768) {
     $('.portfolio-img').removeClass('materialboxed');
+    $('.social-comment-img').removeClass('materialboxed');
   }
 
   $('.header').click((event) => {
