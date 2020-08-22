@@ -61,8 +61,8 @@ $(document).ready(function () {
     verticalSwiping: true,
     slidesToShow: 3,
     draggable: false,
-    focusOnSelect: false,
     swipe: false,
+    infinite: false,
     prevArrow: '.reviews-arrow-left.social',
     nextArrow: '.reviews-arrow-right.social',
     responsive: [
