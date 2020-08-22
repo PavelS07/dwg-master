@@ -224,9 +224,16 @@ body {
   cursor: pointer;
 }
 
+.reviews-arrow-left.social {
+  margin: 0;
+  margin-bottom: 15px;
+  transform: rotate(90deg);
+}
+
 .reviews-main {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .card {
@@ -238,7 +245,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   overflow: hidden;
-  cursor: pointer;
+  cursor: grab;
 }
 
 .card:not(:last-child) {
@@ -282,8 +289,15 @@ body {
   cursor: pointer;
 }
 
+.reviews-arrow-right.social {
+  margin: 0;
+  margin-top: 15px;
+  transform: rotate(90deg);
+}
+
 .social-reviews-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -300,10 +314,18 @@ body {
   text-decoration: none;
 }
 
+.social-card {
+  width: 600px;
+}
+
+.social-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .social-comment-img {
-  width: 100%;
+  width: 600px;
   object-fit: cover;
-  margin-top: 130px;
+  margin: auto;
 }
 
 .pre-price-text {
@@ -503,10 +525,17 @@ body {
   width: 790px;
 }
 
-.carousel .carousel-item  {
+.carousel .carousel-item {
   left: -90px;
 }
 
+.slider {
+  height: 600px;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
 
 @media (max-width: 1400px) {
   .container {
@@ -517,12 +546,12 @@ body {
     margin-bottom: 250px;
     height: 195px;
   }
-  
+
   .carousel {
     width: 590px;
   }
-  
-  .carousel .carousel-item  {
+
+  .carousel .carousel-item {
     left: 8px;
   }
 
@@ -567,9 +596,10 @@ body {
     height: 90%;
   }
 
-  .portfolio-arrow-left{
+  .portfolio-arrow-left {
     left: -2px;
   }
+
   .portfolio-arrow-right {
     right: -2px;
   }
@@ -627,8 +657,8 @@ body {
   .carousel {
     width: 590px;
   }
-  
-  .carousel .carousel-item  {
+
+  .carousel .carousel-item {
     left: 8px;
   }
 
@@ -712,10 +742,6 @@ body {
     height: 100px;
   }
 
-  .social-comment-img {
-    margin-top: 110px;
-  }
-
   .price-card {
     height: 420px;
   }
@@ -745,12 +771,12 @@ body {
   .reviews {
     margin-bottom: 350px;
   }
-  
+
   .carousel {
     width: 450px;
   }
-  
-  .carousel .carousel-item  {
+
+  .carousel .carousel-item {
     left: 8px;
   }
 
@@ -833,6 +859,10 @@ body {
     height: 16px;
   }
 
+  .social-card {
+    width: 400px;
+  }
+
   .price-title {
     font-size: 20px;
     margin-top: 30px;
@@ -881,6 +911,14 @@ body {
     width: 140px;
     height: 100px;
   }
+
+  .social-comment-img {
+    width: 400px;
+  }
+
+  .slider {
+    height: 280px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -891,14 +929,14 @@ body {
   .reviews {
     margin-bottom: 100px;
   }
-  
+
   .carousel {
     width: 100%;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
-  
-  .carousel .carousel-item  {
+
+  .carousel .carousel-item {
     left: 25px;
   }
 
@@ -950,10 +988,6 @@ body {
     justify-content: center;
   }
 
-  .reviews-main .card:not(:first-child) {
-    display: none;
-  }
-
   .card:not(:last-child) {
     margin-right: 0;
   }
@@ -972,6 +1006,10 @@ body {
   .social-reviews-content {
     margin-top: 20px;
     margin-bottom: 35px;
+  }
+
+  .social-card {
+    width: 300px;
   }
 
   .pre-text {
@@ -1019,8 +1057,8 @@ body {
   }
 
   .about-img {
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 60%;
     margin: auto;
     margin-bottom: 15px;
   }
@@ -1037,7 +1075,7 @@ body {
   }
 
   .payment-row {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .payment-row:not(:last-child) {
@@ -1045,12 +1083,30 @@ body {
   }
 
   .payment-img:not(:last-child) {
-    margin-right: 0px;
+    margin-right: 20px;
   }
 
   .payment-img {
     width: 120px;
     height: 80px;
     margin-bottom: 25px;
+  }
+
+  .social-img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mail {
+    font-size: 20px;
+  }
+
+  .social-comment-img {
+    width: 95%;
+    height: 100%;
+  }
+
+  .slider {
+    height: 235px;
   }
 }

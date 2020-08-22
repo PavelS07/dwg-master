@@ -1,8 +1,8 @@
 $(document).ready(function () {
   let width = $(window).width();
 
-  if(width <= 768) {
-    $('.materialboxed').removeClass('materialboxed');
+  if (width <= 768) {
+    $('.portfolio-img').removeClass('materialboxed');
   }
 
   $('.header').click((event) => {
@@ -14,7 +14,7 @@ $(document).ready(function () {
       scrollToElement(toElement);
     }
 
-  })
+  });
 
   $('.mobile-menu').click((event) => {
     let toElementString = event.target.id.split('-')[0];
@@ -26,25 +26,22 @@ $(document).ready(function () {
       scrollToElement(toElement);
     }
 
-  })
-
-  $(document).ready(function () {
-    $('.materialboxed').materialbox();
   });
 
-  $(document).ready(function () {
-    $('.sidenav').sidenav({
-      edge: 'left'
+  $('.comment-mobile-menu').click(() => {
+    $('.sidenav').sidenav('close');
+    $("html").animate({
+      scrollTop: $('.reviews').offset().top - 160,
     });
   });
 
-  // $('.carousel.carousel-slider').carousel({
-  //   fullWidth: false,
-  //   noWrap: true, 
-  //   numVisible: 1
-  // });
-  
-  var mySwiper1 = new Swiper('.swiper-container', {
+  $('.materialboxed').materialbox();  
+
+  $('.sidenav').sidenav({
+    edge: 'left'
+  });
+
+  var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -56,37 +53,46 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
       hideOnClick: true,
-    }    
-  });
-
-  var mySwiperReviews = new Swiper('.swiper-container-reviews', {
-    // Optional parameters
-    direction: 'horizontal',
-    slidesPerView: 3,
-    loop: false,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
     }
   });
+
+  $('.slick-vertical').slick({
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 3,
+    draggable: false,
+    focusOnSelect: false,
+    swipe: false,
+    prevArrow: '.reviews-arrow-left.social',
+    nextArrow: '.reviews-arrow-right.social',
+    responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2,
+	      }
+	    },
+	    {
+	      breakpoint: 576,
+	      settings: {
+	        slidesToShow: 2,
+	      }
+	    }
+    ]
+  });
+
 
   $('.carousel').carousel({
     fullWidth: false,
     numVisible: 3
   });
 
-  $('.reviews-arrow-left').click(() => {
+
+  $('.reviews-arrow-left.site').click(() => {
     $('.carousel').carousel('prev');
   });
 
-  $('.reviews-arrow-right').click(() => {
+  $('.reviews-arrow-right.site').click(() => {
     $('.carousel').carousel('next');
   });
 
@@ -95,5 +101,4 @@ $(document).ready(function () {
       scrollTop: element.offset().top - 100
     });
   }
-
 });
