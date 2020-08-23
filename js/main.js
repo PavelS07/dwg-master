@@ -62,13 +62,12 @@ $(document).ready(function () {
     verticalSwiping: true,
     slidesToShow: 3,
     draggable: false,
-    swipe: false,
     infinite: false,
     prevArrow: '.reviews-arrow-left.social',
     nextArrow: '.reviews-arrow-right.social',
     responsive: [
 	    {
-	      breakpoint: 768,
+	      breakpoint: 769,
 	      settings: {
 	        slidesToShow: 2,
 	      }
