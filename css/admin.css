@@ -1,9 +1,13 @@
 .heart {
-  animation: heart 1s infinite ease-in-out;
+  -webkit-animation-name: heart;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  /* animation: heart 1s infinite ease-in-out; */
   cursor: pointer;
 }
 
-@keyframes heart {
+@-webkit-keyframes heart {
   from {
     width: 106px;
     height: 106px;
