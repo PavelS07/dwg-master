@@ -11,7 +11,7 @@
   from {
     width: 106px;
     height: 106px;
-    animation-timing-function: ease-in
+    animation-timing-function: ease-in;
   }
 
   50% {
