@@ -8,10 +8,10 @@
 }
 
 @-webkit-keyframes heart {
-  from {
+  0% {
     width: 106px;
     height: 106px;
-    animation-timing-function: ease-in
+    animation-timing-function: ease-in;
   }
 
   50% {
@@ -20,7 +20,7 @@
     animation-timing-function: ease-in;
   }
 
-  to {
+  100% {
     width: 106px;
     height: 106px;
     animation-timing-function: ease-in;
