@@ -1,0 +1,24 @@
+.heart {
+  animation: heart 1s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes heart {
+  from {
+    width: 106px;
+    height: 106px;
+    animation-timing-function: ease-in
+  }
+
+  50% {
+    width: 100px;
+    height: 100px;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    width: 106px;
+    height: 106px;
+    animation-timing-function: ease-in;
+  }
+}
