@@ -1,9 +1,9 @@
 .heart {
-  animation: heart 1s infinite 0.01s ease-in-out;
-  animation-name: heart;
+  animation: heart 1s infinite ease-in-out;
+  /* animation-name: heart;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; */
   width: 106px;
   height: 106px;
 }
@@ -25,5 +25,25 @@
     width: 106px;
     height: 106px;
     animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes heart {
+  0% {
+    -webkit-keyframes-width: 106px;
+    -webkit-keyframes-height: 106px;
+    -webkit-keyframes-animation-timing-function: ease-in;
+  }
+
+  50% {
+    -webkit-keyframes-width: 100px;
+    -webkit-keyframes-height: 100px;
+    -webkit-keyframes-animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-keyframes-width: 106px;
+    -webkit-keyframes-height: 106px;
+    -webkit-keyframes-animation-timing-function: ease-in;
   }
 }
