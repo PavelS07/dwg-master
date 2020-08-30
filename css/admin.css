@@ -1,5 +1,6 @@
 .heart {
   animation: heart 1s infinite ease-in-out;
+  -webkit-animation: heart 1s infinite ease-in-out;
   /* animation-name: heart;
   animation-duration: 1s;
   animation-iteration-count: infinite;
