@@ -7,26 +7,11 @@
   animation-timing-function: ease-in-out; */
   width: 106px;
   height: 106px;
+  cursor: pointer;
 }
 
-@-webkit-keyframes heart {
-  0% {
-    -webkit-width: 106px;
-    -webkit-height: 106px;
-    -webkit-animation-timing-function: ease-in;
-  }
-
-  50% {
-    -webkit-width: 100px;
-    -webkit-height: 100px;
-    -webkit-animation-timing-function: ease-in;
-  }
-
-  100% {
-    -webkit-width: 106px;
-    -webkit-height: 106px;
-    -webkit-animation-timing-function: ease-in;
-  }
+.heart:hover {
+  animation-play-state: paused;
 }
 
 @keyframes heart {
@@ -46,5 +31,25 @@
     width: 106px;
     height: 106px;
     animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes heart {
+  0% {
+    -webkit-width: 106px;
+    -webkit-height: 106px;
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  50% {
+    -webkit-width: 100px;
+    -webkit-height: 100px;
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-width: 106px;
+    -webkit-height: 106px;
+    -webkit-animation-timing-function: ease-in;
   }
 }
