@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileImage" content="favicons/ms-icon-70x70.png">
+  <title>Admin Panel</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="favicons/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="favicons/android-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" href="favicons/apple-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo-image.png" alt="Логотип dwg-master.ru" class="logo-img">
+        <img src="img/logo-text.png" alt="Логотип dwg-master.ru" class="logo-text">
+      </a>
+    </div>
+    <!-- /.logo -->
+    <div class="navigation">
+      <ul class="navigation-block-link">
+        <a href="admin-orders.html" class="navigation-link">
+          <li class="navigation-item">Заказы (<span class="nav-count">3</span>)</li>
+        </a>
+        <a href="admin-reviews.html" class="navigation-link">
+          <li class="navigation-item">Отзывы (<span class="nav-count">120</span>)</li>
+        </a>
+        <a href="admin-add-job.html" class="navigation-link">
+          <li class="navigation-item">Добавить работу</li>
+        </a>
+        <a href="admin-add-review.html" class="navigation-link">
+          <li class="navigation-item">Добавить отзыв</li>
+        </a>
+        <a href="admin-portfolio.html" class="navigation-link">
+          <li class="navigation-item">Портфолио</li>
+        </a>
+      </ul>
+    </div>
+    <!-- /.navigation -->
+    <button class="m-menu-button sidenav-trigger" data-target="slide-out">
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </button>
+  </header>
+  <!-- /.header -->
+  <section class="admin-reviews">
+    <div class="container">
+      <h2 class="main-title text-center admin-main-title">
+        Добавить работу в портфолио
+      </h2>
+      <div class="admin-reviews-list add-job">
+        <div class="admin-reviews-card">
+          <form action="/" method="POST">
+            <div class="admin-reviews-title-card">
+                <div class="admin-add-job">
+                  <p class="admin-add-job-name">
+                    Название
+                  </p>
+                  <div class="row">
+                    <div class="input-field col s8 m12 admin-order-name-input">
+                      <input placeholder="Разрез осевого компрессора" type="text" class="validate" required>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- /.admin-reviews-title-card -->
+            <div class="admin-reviews-main-card">
+              <div class="row">
+                <div class="file-field input-field col s8 offset-s2 m8 offset-m2">
+                  <div class="btn">
+                    <span class="btn-text">Добавить файл</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.admin-reviews-main-card -->
+            <div class="admin-reviews-buttons">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Добавить</button>
+            </div>
+          </form>
+          <!-- /.form -->
+        </div>
+        <!-- /.admin-reviews-card -->
+      </div>
+      <!-- /.admin-reviews-list -->
+      <form action="/" method="POST">
+        <div class="admin-button-exit">
+          <button class="btn waves-effect waves-light grey" type="submit" name="action">Выход</button>
+        </div>
+      </form>
+      <!-- /.form -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.admin-reviews -->
+
+  <ul class="navigation-block-link mobile-menu sidenav" id="slide-out">
+    <a href="admin-orders.html">
+      <li class="mobile-navigation-item" id="portfolio-link">Заказы (<span class="nav-count">3</span>)</li>
+    </a>
+    <a href="admin-reviews.html">
+      <li class="mobile-navigation-item" id="services-link">Отзывы (<span class="nav-count">150</span>)</li>
+    </a>
+    <a href="admin-add-job.html">
+      <li class="mobile-navigation-item" id="price-link">Добавить работу в портфолио</li>
+    </a>
+    <a href="admin-add-review.html">
+      <li class="mobile-navigation-item" id="price-link">Добавить отзыв</li>
+    </a>
+    <a href="admin-portfolio.html">
+      <li class="mobile-navigation-item" id="price-link">Портфолио</li>
+    </a>
+  </ul>
+  <!-- /. mobile-menu -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

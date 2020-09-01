@@ -63,7 +63,8 @@
 
 .admin-reviews-info p,
 .admin-reviews-main-title-card,
-.admin-reviews-main-download-card {
+.admin-reviews-main-download-card,
+.admin-add-job-name {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
@@ -100,12 +101,40 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .admin-reviews-pagination .pagination {
   display: block;
   margin: auto;
   width: auto;
+}
+
+.admin-order-name {
+  display: flex;
+  align-items: center;
+}
+
+.admin-add-job {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.admin-add-job-name {
+  margin-right: 5px;
+}
+
+.add-job {
+  margin-top: 20px;
+}
+
+.admin-portfolio-img {
+  display: block;
+  width: 502px;
+  height: 356px;
+  object-fit: cover;
+  margin: auto;
 }
 
 @keyframes heart {
@@ -188,6 +217,11 @@
   .admin-reviews-status-danger {
     width: 64px;
     height: 64px;
+  }
+
+  .admin-portfolio-img {
+    width: 95%;
+    height: 70%;
   }
 }
 
