@@ -14,6 +14,100 @@
   animation-play-state: paused;
 }
 
+.nav-count {
+  color: #FF0000;
+}
+
+.admin-main-title {
+  height: 90px;
+}
+
+.admin-reviews-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  height: 0;
+}
+
+.admin-reviews-row-label {
+  height: 5;
+}
+
+.admin-reviews-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.admin-reviews-card {
+  display: block;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  width: 843px;
+  margin: auto;
+  padding-top: 36px;
+  padding-right: 40px;
+  padding-bottom: 36px;
+  padding-left: 40px;
+}
+
+.admin-reviews-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.admin-reviews-title-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.admin-reviews-info p,
+.admin-reviews-main-title-card,
+.admin-reviews-main-download-card {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.admin-reviews-info p span {
+  font-weight: 300;
+}
+
+.admin-reviews-status {
+  display: flex;
+  align-items: center;
+}
+
+.admin-reviews-main-text-card {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.admin-reviews-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-reviews-buttons button {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  width: 300px;
+}
+
+.admin-reviews-pagination,
+.admin-button-exit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.admin-reviews-pagination .pagination {
+  display: block;
+  margin: auto;
+  width: auto;
+}
+
 @keyframes heart {
   0% {
     width: 106px;
@@ -51,5 +145,75 @@
     width: 106px;
     height: 106px;
     animation-timing-function: ease-in;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navigation-link:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navigation-link:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .admin-reviews-card {
+    width: 660px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .admin-reviews-info p,
+  .admin-reviews-main-title-card,
+  .admin-reviews-main-download-card {
+    font-size: 16px;
+  }
+
+  .admin-reviews-card {
+    width: 95%;
+  }
+
+  .admin-reviews-main-text-card {
+    font-size: 18px;
+  }
+
+  .admin-reviews-status-success {
+    width: 48px;
+    height: 48px;
+  }
+
+  .admin-reviews-status-danger {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-reviews-card {
+    padding-top: 26px;
+    padding-right: 30px;
+    padding-bottom: 26px;
+    padding-left: 30px;
+  }
+
+  .admin-reviews-title-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-reviews-status {
+    order: -1;
+  }
+
+  .admin-reviews-main-title-card {
+    margin-top: 0;
+  }
+
+  .admin-reviews-buttons button {
+    width: 200px;
   }
 }
