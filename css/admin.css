@@ -14,6 +14,16 @@
   animation-play-state: paused;
 }
 
+.form-auth {
+  margin-top: 50px;
+  display: none;
+}
+
+.button-auth {
+  display: block;
+  margin: auto;
+}
+
 .nav-count {
   color: #FF0000;
 }

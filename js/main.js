@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   if (width <= 576) {
     // Check length text reviews
-    fullToShortText(100);
+    fullToShortText(90);
   }
 
   if (width <= 768) {
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
   if (width <= 991) {
     // Check length text reviews
-    fullToShortText(320);
+    fullToShortText(280);
   }
 
   if (width <= 1400 && width > 991) {
@@ -21,9 +21,9 @@ $(document).ready(function () {
     fullToShortText(180);
   }
 
-  if(width > 1400) {
+  if (width > 1400) {
     // Check length text reviews
-    fullToShortText(360);
+    fullToShortText(320);
   }
 
   $('.header').click((event) => {
@@ -35,6 +35,17 @@ $(document).ready(function () {
       scrollToElement(toElement);
     }
 
+  });
+
+  $('.zero-button').click(() => {
+    let toElement = $('.comment');
+    scrollToElement(toElement);
+  });
+
+  // Close result form after POST
+  $('.close-form').click(() => {
+    $('#modal-order-form').hide();
+    $(".modal-overlay").remove()
   });
 
   $('.mobile-menu').click((event) => {
@@ -51,12 +62,25 @@ $(document).ready(function () {
 
   $('.comment-mobile-menu').click(() => {
     $('.sidenav').sidenav('close');
-    $("html").animate({
-      scrollTop: $('.reviews').offset().top - 160,
-    });
+
+    let reviews = $('.reviews');
+    let zeroReviews = $('.zero-reviews');
+
+    if(reviews.length === 1) {
+      $("html").animate({
+        scrollTop: $('.reviews').offset().top - 160,
+      });
+    }
+
+    if(zeroReviews.length === 1) {
+      $("html").animate({
+        scrollTop: $('.zero-reviews').offset().top - 160,
+      });
+    }
+
   });
 
-  $('.materialboxed').materialbox();  
+  $('.materialboxed').materialbox();
 
   $('.sidenav').sidenav({
     edge: 'left'
@@ -80,24 +104,23 @@ $(document).ready(function () {
   $('.slick-vertical').slick({
     vertical: true,
     verticalSwiping: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     draggable: false,
     infinite: false,
     prevArrow: '.reviews-arrow-left.social',
     nextArrow: '.reviews-arrow-right.social',
-    responsive: [
-	    {
-	      breakpoint: 769,
-	      settings: {
-	        slidesToShow: 2,
-	      }
-	    },
-	    {
-	      breakpoint: 576,
-	      settings: {
-	        slidesToShow: 1,
-	      }
-	    }
+    responsive: [{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
     ]
   });
 
@@ -131,15 +154,32 @@ $(document).ready(function () {
   function fullToShortText(lengthString) {
     $('.card-text').each((i, obj) => {
 
-      if($(obj).text().trim().length > lengthString) {
-        $(obj).text((i, text)=>{
+      if ($(obj).text().trim().length > lengthString) {
+        $(obj).text((i, text) => {
           let shortText = text.substring(0, lengthString - 10) + '...';
           $(obj).hide();
           $(obj).parent('.card').append('<p class="card-text short-text">' + shortText + '</p>');
         });
         $(obj).parent('.card').append('<span class="read-more modal-trigger" href="#modal1">Читать</span>');
       }
+
+    });
+  }
+
+  // Check file max-size 
+  checkUploadFile(5242880, $('#file-upload'));
+  checkUploadFile(3145728, $('#admin-file-upload'));
+
+  function checkUploadFile(maxSize, object) {
+    object.bind('change', function () {
+      let sizeFile = this.files[0].size;
   
+      if(sizeFile > maxSize) {
+        object.val('');
+        $('.max-size-text-error').text('Размер файла превышает ' + maxSize / (1024*1024) + ' Мб.');
+      } else {
+        $('.max-size-text-error').text('');
+      }
     });
   }
 
