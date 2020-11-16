@@ -601,6 +601,28 @@ body {
   text-align: center;
 }
 
+.sidenav li>a {
+  font-size: 16px;
+}
+
+.card-deal {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0%;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 35px;
+  width: 900px;
+  border: 1px solid rgba(0, 0, 0, 0.2); 
+}
+
+.description-deal {
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.06em;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;
@@ -917,7 +939,7 @@ body {
   .reviews-content {
     margin-top: 0;
   }
-  
+
   .card-title {
     flex-direction: column;
     align-items: flex-start;
@@ -1214,7 +1236,7 @@ body {
   }
 
   .transform-captcha {
-    transform:scale(0.65);
-    transform-origin:0;
+    transform: scale(0.65);
+    transform-origin: 0;
   }
 }
