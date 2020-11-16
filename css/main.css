@@ -601,11 +601,6 @@ body {
   text-align: center;
 }
 
-.logo-happy-NY {
-  z-index: 99;
-  margin-right: -3px;
-}
-
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;
