@@ -49,6 +49,8 @@
           <li class="navigation-item">Портфолио</li>
         </a>
       </ul>
+      <!-- Dropdown Trigger -->
+      <img src="img/drop-menu.svg" class='dropdown-trigger drop-menu-arrow' data-target='dropdown1' alt="Меню">
     </div>
     <!-- /.navigation -->
     <button class="m-menu-button sidenav-trigger" data-target="slide-out">
@@ -316,11 +318,19 @@
   </ul>
   <!-- /. mobile-menu -->
 
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="admin-deals.html">Акции</a></li>
+    <li><a href="#!">Бухгалтерия</a></li>
+  </ul>
+  <!-- dropdown-content -->
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
 </body>
 
 </html>

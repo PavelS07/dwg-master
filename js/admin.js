@@ -9,4 +9,14 @@ $(document).ready(function () {
     $('.bg-love').hide(1000);
     $('.form-auth').show(2000);
   });
+
+  $('.dropdown-trigger').dropdown({
+    alignment:'left',
+    constrainWidth: false,
+  });
+
+  $('.admin-add-condition').delegate('.add-condition-button', 'click', function() {
+    $(this).siblings('.admin-block-conditions').append('<input value="Название" type="text" class="validate" name="conditions[]" required>');
+  });
+  
 });

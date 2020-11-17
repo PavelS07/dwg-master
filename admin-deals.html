@@ -63,14 +63,14 @@
   <section class="admin-reviews">
     <div class="container">
       <h2 class="main-title text-center admin-main-title">
-        Отзывы
+        Акции
       </h2>
       <div class="admin-reviews-search">
         <div class="admin-reviews-input-block">
           <form action="/" method="POST">
             <div class="row admin-reviews-row">
               <div class="input-field col col s5 offset-s2 m2 offset-m5">
-                <input placeholder="Номер отзыва" id="reviews-search" type="text" class="validate" required>
+                <input placeholder="Номер акции" id="reviews-search" type="text" class="validate" required>
               </div>
               <button class="btn waves-effect waves-light btn-small" type="submit" name="action">Поиск</button>
             </div>
@@ -78,15 +78,7 @@
               <div class="input-field col col s5 offset-s2 m2 offset-m5">
                 <label>
                   <input type="checkbox" />
-                  <span>Одобренные</span>
-                </label>
-              </div>
-            </div>
-            <div class="row admin-reviews-row-label">
-              <div class="input-field col col s5 offset-s2 m2 offset-m5">
-                <label>
-                  <input type="checkbox" />
-                  <span>В работе</span>
+                  <span>Скрытые</span>
                 </label>
               </div>
             </div>
@@ -104,16 +96,10 @@
                   № - <span class="admin-reviews-number-span">1csd2</span>
                 </p>
                 <div class="row admin-order-name">
-                  <p class="admin-reviews-name">
-                    Имя -
-                  </p>
-                  <div class="input-field col s8 m10 admin-order-name-input">
-                    <input value="Павел" type="text" class="validate" required>
+                  <div class="input-field col s8 m12 admin-order-name-input">
+                    <input value="Название" type="text" class="validate" required>
                   </div>
                 </div>
-                <p class="admin-reviews-mail">
-                  E-mail - <span class="admin-reviews-mail-span">pav.sobolew2015@yandex.ru</span>
-                </p>
               </div>
               <div class="admin-reviews-status">
                 <img src="admin/img/success-review.jpg" alt="Успешно" class="admin-reviews-status-success">
@@ -129,23 +115,23 @@
                 <div class="input-field col s12">
                   <textarea id="textarea1"
                     class="materialize-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus tempor, neque, duis fringilla. Nulla nibh tellus tincidunt etiam enim. Dui tempor fermentum, facilisi lobortis enim at augue. Diam integer urna molestie urna, tellus, pretium enim, nec. Auctor elit vitae quis lorem at at dui orci viverra. Adipiscing nibh at magna viverra porttitor in. Vulputate montes, quam in quis risus a. Convallis leo elementum adipiscing tristique malesuada. Massa lobortis vitae consequat bibendum.</textarea>
-                  <label for="textarea1">Содержание</label>
                 </div>
+              </div>
+              <p class="admin-reviews-main-title-card">
+                Условие:
+              </p>
+              <div class="row admin-add-condition">
+                <div class="input-field col s8 m11 admin-order-name-input admin-block-conditions">
+                  <input value="Название" type="text" class="validate" name="conditions[]" required>
+                </div>
+                <img src="img/add-condition.svg" alt="Добавить условие" class="add-condition-button">
               </div>
             </div>
             <!-- /.admin-reviews-main-card -->
-            <div class="admin-order-rating">
-              <div class="row">
-                <div class="input-field col s8 m4">
-                  <span class="text-rating">Оценка</span>
-                  <input type="range" min="0" max="5" />
-                </div>
-              </div>
-            </div>
-            <!-- /.admin-order-rating -->
             <div class="admin-reviews-buttons">
-              <button class="btn waves-effect waves-light" type="submit" name="action">Одобрить</button>
-              <button class="btn waves-effect waves-light grey" type="submit" name="action">Удалить</button>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Изменить</button>
+              <button class="btn waves-effect waves-light grey" type="submit" name="action">Скрыть</button>
+              <button class="btn waves-effect waves-light red" type="submit" name="action">Удалить</button>
             </div>
           </form>
           <!-- /.form -->
@@ -159,16 +145,10 @@
                   № - <span class="admin-reviews-number-span">1csd2</span>
                 </p>
                 <div class="row admin-order-name">
-                  <p class="admin-reviews-name">
-                    Имя -
-                  </p>
-                  <div class="input-field col s8 m10 admin-order-name-input">
-                    <input value="Павел" type="text" class="validate" required>
+                  <div class="input-field col s8 m12 admin-order-name-input">
+                    <input value="Название" type="text" class="validate" required>
                   </div>
                 </div>
-                <p class="admin-reviews-mail">
-                  E-mail - <span class="admin-reviews-mail-span">pav.sobolew2015@yandex.ru</span>
-                </p>
               </div>
               <div class="admin-reviews-status">
                 <img src="admin/img/success-review.jpg" alt="Успешно" class="admin-reviews-status-success">
@@ -184,23 +164,23 @@
                 <div class="input-field col s12">
                   <textarea id="textarea1"
                     class="materialize-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus tempor, neque, duis fringilla. Nulla nibh tellus tincidunt etiam enim. Dui tempor fermentum, facilisi lobortis enim at augue. Diam integer urna molestie urna, tellus, pretium enim, nec. Auctor elit vitae quis lorem at at dui orci viverra. Adipiscing nibh at magna viverra porttitor in. Vulputate montes, quam in quis risus a. Convallis leo elementum adipiscing tristique malesuada. Massa lobortis vitae consequat bibendum.</textarea>
-                  <label for="textarea1">Содержание</label>
                 </div>
+              </div>
+              <p class="admin-reviews-main-title-card">
+                Условие:
+              </p>
+              <div class="row admin-add-condition">
+                <div class="input-field col s8 m11 admin-order-name-input admin-block-conditions">
+                  <input value="Название" type="text" class="validate" name="conditions[]" required>
+                </div>
+                <img src="img/add-condition.svg" alt="Добавить условие" class="add-condition-button">
               </div>
             </div>
             <!-- /.admin-reviews-main-card -->
-            <div class="admin-order-rating">
-              <div class="row">
-                <div class="input-field col s8 m4">
-                  <span class="text-rating">Оценка</span>
-                  <input type="range" min="0" max="5" />
-                </div>
-              </div>
-            </div>
-            <!-- /.admin-order-rating -->
             <div class="admin-reviews-buttons">
-              <button class="btn waves-effect waves-light" type="submit" name="action">Одобрить</button>
-              <button class="btn waves-effect waves-light grey" type="submit" name="action">Удалить</button>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Изменить</button>
+              <button class="btn waves-effect waves-light grey" type="submit" name="action">Скрыть</button>
+              <button class="btn waves-effect waves-light red" type="submit" name="action">Удалить</button>
             </div>
           </form>
           <!-- /.form -->
@@ -214,16 +194,10 @@
                   № - <span class="admin-reviews-number-span">1csd2</span>
                 </p>
                 <div class="row admin-order-name">
-                  <p class="admin-reviews-name">
-                    Имя -
-                  </p>
-                  <div class="input-field col s8 m10 admin-order-name-input">
-                    <input value="Павел" type="text" class="validate" required>
+                  <div class="input-field col s8 m12 admin-order-name-input">
+                    <input value="Название" type="text" class="validate" required>
                   </div>
                 </div>
-                <p class="admin-reviews-mail">
-                  E-mail - <span class="admin-reviews-mail-span">pav.sobolew2015@yandex.ru</span>
-                </p>
               </div>
               <div class="admin-reviews-status">
                 <img src="admin/img/success-review.jpg" alt="Успешно" class="admin-reviews-status-success">
@@ -239,23 +213,23 @@
                 <div class="input-field col s12">
                   <textarea id="textarea1"
                     class="materialize-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus tempor, neque, duis fringilla. Nulla nibh tellus tincidunt etiam enim. Dui tempor fermentum, facilisi lobortis enim at augue. Diam integer urna molestie urna, tellus, pretium enim, nec. Auctor elit vitae quis lorem at at dui orci viverra. Adipiscing nibh at magna viverra porttitor in. Vulputate montes, quam in quis risus a. Convallis leo elementum adipiscing tristique malesuada. Massa lobortis vitae consequat bibendum.</textarea>
-                  <label for="textarea1">Содержание</label>
                 </div>
+              </div>
+              <p class="admin-reviews-main-title-card">
+                Условие:
+              </p>
+              <div class="row admin-add-condition">
+                <div class="input-field col s8 m11 admin-order-name-input admin-block-conditions">
+                  <input value="Название" type="text" class="validate" name="conditions[]" required>
+                </div>
+                <img src="img/add-condition.svg" alt="Добавить условие" class="add-condition-button">
               </div>
             </div>
             <!-- /.admin-reviews-main-card -->
-            <div class="admin-order-rating">
-              <div class="row">
-                <div class="input-field col s8 m4">
-                  <span class="text-rating">Оценка</span>
-                  <input type="range" min="0" max="5" />
-                </div>
-              </div>
-            </div>
-            <!-- /.admin-order-rating -->
             <div class="admin-reviews-buttons">
-              <button class="btn waves-effect waves-light" type="submit" name="action">Одобрить</button>
-              <button class="btn waves-effect waves-light grey" type="submit" name="action">Удалить</button>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Изменить</button>
+              <button class="btn waves-effect waves-light grey" type="submit" name="action">Скрыть</button>
+              <button class="btn waves-effect waves-light red" type="submit" name="action">Удалить</button>
             </div>
           </form>
           <!-- /.form -->
@@ -269,16 +243,10 @@
                   № - <span class="admin-reviews-number-span">1csd2</span>
                 </p>
                 <div class="row admin-order-name">
-                  <p class="admin-reviews-name">
-                    Имя -
-                  </p>
-                  <div class="input-field col s8 m10 admin-order-name-input">
-                    <input value="Павел" type="text" class="validate" required>
+                  <div class="input-field col s8 m12 admin-order-name-input">
+                    <input value="Название" type="text" class="validate" required>
                   </div>
                 </div>
-                <p class="admin-reviews-mail">
-                  E-mail - <span class="admin-reviews-mail-span">pav.sobolew2015@yandex.ru</span>
-                </p>
               </div>
               <div class="admin-reviews-status">
                 <img src="admin/img/success-review.jpg" alt="Успешно" class="admin-reviews-status-success">
@@ -294,23 +262,23 @@
                 <div class="input-field col s12">
                   <textarea id="textarea1"
                     class="materialize-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus tempor, neque, duis fringilla. Nulla nibh tellus tincidunt etiam enim. Dui tempor fermentum, facilisi lobortis enim at augue. Diam integer urna molestie urna, tellus, pretium enim, nec. Auctor elit vitae quis lorem at at dui orci viverra. Adipiscing nibh at magna viverra porttitor in. Vulputate montes, quam in quis risus a. Convallis leo elementum adipiscing tristique malesuada. Massa lobortis vitae consequat bibendum.</textarea>
-                  <label for="textarea1">Содержание</label>
                 </div>
+              </div>
+              <p class="admin-reviews-main-title-card">
+                Условие:
+              </p>
+              <div class="row admin-add-condition">
+                <div class="input-field col s8 m11 admin-order-name-input admin-block-conditions">
+                  <input value="Название" type="text" class="validate" name="conditions[]" required>
+                </div>
+                <img src="img/add-condition.svg" alt="Добавить условие" class="add-condition-button" />
               </div>
             </div>
             <!-- /.admin-reviews-main-card -->
-            <div class="admin-order-rating">
-              <div class="row">
-                <div class="input-field col s8 m4">
-                  <span class="text-rating">Оценка</span>
-                  <input type="range" min="0" max="5" />
-                </div>
-              </div>
-            </div>
-            <!-- /.admin-order-rating -->
             <div class="admin-reviews-buttons">
-              <button class="btn waves-effect waves-light" type="submit" name="action">Одобрить</button>
-              <button class="btn waves-effect waves-light grey" type="submit" name="action">Удалить</button>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Изменить</button>
+              <button class="btn waves-effect waves-light grey" type="submit" name="action">Скрыть</button>
+              <button class="btn waves-effect waves-light red" type="submit" name="action">Удалить</button>
             </div>
           </form>
           <!-- /.form -->

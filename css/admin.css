@@ -28,6 +28,11 @@
   color: #FF0000;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .admin-main-title {
   height: 90px;
 }
@@ -147,6 +152,17 @@
   margin: auto;
 }
 
+.admin-add-condition {
+  display: flex;
+  align-items: flex-end;
+  margin-left: -50px;
+}
+
+.add-condition-button {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
 @keyframes heart {
   0% {
     width: 106px;
@@ -232,6 +248,10 @@
   .admin-portfolio-img {
     width: 95%;
     height: 70%;
+  }
+
+  .navigation {
+    display: none;
   }
 }
 
