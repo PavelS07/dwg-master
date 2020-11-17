@@ -163,6 +163,24 @@
   cursor: pointer;
 }
 
+.number-condition-block {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.number-condition {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
 @keyframes heart {
   0% {
     width: 106px;
