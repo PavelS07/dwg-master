@@ -18,7 +18,7 @@ $(document).ready(function () {
   $('.admin-add-condition').delegate('.add-condition-button', 'click', function() {
     let countCondition = $(this).siblings('.admin-block-conditions').find('.number-condition').filter(':last').text();
     countCondition = parseInt(countCondition) + 1;
-    html = '<div class="number-condition-block"><span class="number-condition">' + countCondition + '</span></div><textarea id="textarea1" class="materialize-textarea" name="conditions[]" required></textarea>';
+    html = '<div class="number-condition-block"><span class="number-condition">' + countCondition + '</span></div><textarea id="textarea1" class="materialize-textarea" name="conditions[]" placeholder="Условие" required></textarea>';
     $(this).siblings('.admin-block-conditions').append(html);
   });
   

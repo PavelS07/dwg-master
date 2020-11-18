@@ -63,37 +63,15 @@
   <section class="admin-reviews">
     <div class="container">
       <h2 class="main-title text-center admin-main-title">
-        Акции
+        Добавить акцию
       </h2>
-      <div class="admin-reviews-search">
-        <div class="admin-reviews-input-block">
-          <form action="/" method="POST">
-            <div class="row admin-reviews-row">
-              <div class="input-field col col s5 offset-s2 m2 offset-m5">
-                <input placeholder="Номер акции" id="reviews-search" type="text" class="validate" required>
-              </div>
-              <button class="btn waves-effect waves-light btn-small" type="submit" name="action">Поиск</button>
-            </div>
-            <div class="row admin-reviews-row-label">
-              <div class="input-field col col s5 offset-s2 m2 offset-m5">
-                <label>
-                  <input type="checkbox" />
-                  <span>Скрытые</span>
-                </label>
-              </div>
-            </div>
-          </form>
-          <!-- /.form -->
-        </div>
-      </div>
-      <!-- /.admin-reviews-search -->
-      <div class="admin-reviews-list">
+      <div class="admin-reviews-list admin-add-deal-form">
         <div class="admin-reviews-card">
           <form action="/" method="POST">
             <div class="admin-reviews-title-card">
               <div class="admin-reviews-info">
                 <p class="admin-reviews-number">
-                  № - <span class="admin-reviews-number-span">1csd2</span>
+                  Название
                 </p>
                 <div class="row admin-order-name">
                   <div class="input-field col s12 m12 admin-order-name-input">
@@ -109,7 +87,7 @@
               </p>
               <div class="row">
                 <div class="input-field col s12 m12">
-                  <textarea id="textarea1" class="materialize-textarea" placeholder="Описание"></textarea>
+                  <textarea id="textarea1" class="materialize-textarea" placeholder="Описание" req></textarea>
                 </div>
               </div>
               <p class="admin-reviews-main-title-card">
@@ -120,7 +98,7 @@
                   <div class="number-condition-block">
                     <span class="number-condition">1</span>
                   </div>
-                  <textarea id="textarea1" class="materialize-textarea" name="conditions[]" required></textarea>
+                  <textarea id="textarea1" class="materialize-textarea" name="conditions[]" placeholder="Условие" required></textarea>
                 </div>
                 <img src="img/add-condition.svg" alt="Добавить условие" class="add-condition-button">
               </div>
@@ -136,16 +114,6 @@
         <!-- /.admin-reviews-card -->
       </div>
       <!-- /.admin-reviews-list -->
-      <div class="admin-reviews-pagination">
-        <ul class="pagination">
-          <li class="active"><a href="#!">1</a></li>
-          <li class="waves-effect"><a href="#!">2</a></li>
-          <li class="waves-effect"><a href="#!">3</a></li>
-          <li class="waves-effect"><a href="#!">4</a></li>
-          <li class="waves-effect"><a href="#!">5</a></li>
-        </ul>
-      </div>
-      <!-- /.admin-reviews-pagination -->
       <form action="/" method="POST">
         <div class="admin-button-exit">
           <button class="btn waves-effect waves-light grey" type="submit" name="action">Выход</button>
@@ -176,13 +144,21 @@
     <li class="mobile-navigation-item" id="deals-link">
       <a href="admin-deals.html">Акции</a>
     </li>
+    <li class="mobile-navigation-item" id="deals-link">
+      <a href="admin-deals.html">Добавить акцию</a>
+    </li>
+    <li class="mobile-navigation-item" id="deals-link">
+      <a href="admin-deals.html">Бухгалтерия</a>
+    </li>
   </ul>
   <!-- /. mobile-menu -->
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
     <li><a href="admin-deals.html">Акции</a></li>
-    <li><a href="#!">Бухгалтерия</a></li>
+    <li><a href="admin-deal.html">Бухгалтерия</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="admin-deal.html">Добавить акцию</a></li>
   </ul>
   <!-- dropdown-content -->
 

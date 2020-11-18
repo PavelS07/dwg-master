@@ -181,6 +181,10 @@
   margin-left: 6px;
 }
 
+.admin-add-deal-form {
+  margin-top: 0;
+}
+
 @keyframes heart {
   0% {
     width: 106px;
