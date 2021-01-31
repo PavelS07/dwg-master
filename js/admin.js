@@ -15,6 +15,12 @@ $(document).ready(function () {
     constrainWidth: false,
   });
 
+  $('.datepicker').datepicker({
+    autoClose: true,
+    format: "dd.mm.yyyy"
+  });
+
+
   $('.admin-add-condition').delegate('.add-condition-button', 'click', function() {
     let countCondition = $(this).siblings('.admin-block-conditions').find('.number-condition').filter(':last').text();
     countCondition = parseInt(countCondition) + 1;

@@ -1,5 +1,12 @@
 $(document).ready(function () {
   let width = $(window).width();
+  let uri = window.location.href;
+
+  if (uri.indexOf("#make-order") != -1) {
+    let toElementOrder = $('.order');
+    scrollToElement(toElementOrder);
+    uri = '';
+  }
 
   if (width <= 576) {
     // Check length text reviews
@@ -25,6 +32,7 @@ $(document).ready(function () {
     // Check length text reviews
     fullToShortText(320);
   }
+
 
   $('.header').click((event) => {
     let toElementString = event.target.id.split('-')[0];
@@ -66,13 +74,13 @@ $(document).ready(function () {
     let reviews = $('.reviews');
     let zeroReviews = $('.zero-reviews');
 
-    if(reviews.length === 1) {
+    if (reviews.length === 1) {
       $("html").animate({
         scrollTop: $('.reviews').offset().top - 160,
       });
     }
 
-    if(zeroReviews.length === 1) {
+    if (zeroReviews.length === 1) {
       $("html").animate({
         scrollTop: $('.zero-reviews').offset().top - 160,
       });
@@ -173,10 +181,10 @@ $(document).ready(function () {
   function checkUploadFile(maxSize, object) {
     object.bind('change', function () {
       let sizeFile = this.files[0].size;
-  
-      if(sizeFile > maxSize) {
+
+      if (sizeFile > maxSize) {
         object.val('');
-        $('.max-size-text-error').text('Размер файла превышает ' + maxSize / (1024*1024) + ' Мб.');
+        $('.max-size-text-error').text('Размер файла превышает ' + maxSize / (1024 * 1024) + ' Мб.');
       } else {
         $('.max-size-text-error').text('');
       }

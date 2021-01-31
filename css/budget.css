@@ -1,0 +1,193 @@
+.navigation-block-link {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-block-link.mobile-menu {
+  display: block;
+}
+
+.drop-down-menu-link {
+  display: flex;
+  align-items: center;
+}
+
+.best-card {
+  max-width: 594px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  margin: auto;
+  padding: 15px;
+  margin-bottom: 47px;
+}
+
+.best-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.best-time-interval-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.best-content {
+  margin-top: 10px;
+}
+
+.content-line {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+.best-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.best-name-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.search-time-interval {
+  cursor: pointer;
+}
+
+.admin-order-name {
+  margin-bottom: 0;
+}
+
+.admin-order-name-input {
+  margin-right: 10px;
+}
+
+.budget-card-info-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.count-change {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.datepicker-modal {
+  max-height: 210px;
+}
+
+.add-form-income {
+  margin-top: 0;
+}
+
+.analysis-title {
+  height: 45px;
+}
+
+.odt-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0;
+}
+
+.odt-graph {
+  max-width: 600px;
+  margin: auto;
+}
+
+.odt-info-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.graph-filter {
+  max-width: 400px;
+  margin: auto;
+}
+
+.graph-filter-row {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .best-card {
+    width: 80%;
+  }
+
+  .graph-filter {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .best-title {
+    font-size: 26px;
+  }
+
+  .best-time-interval-text {
+    font-size: 14px;
+  }
+
+  .best-name {
+    font-size: 18px;
+  }
+
+  .best-name-text {
+    font-size: 14px;
+  }
+
+  .count-change {
+    font-size: 14px;
+  }
+
+  .odt-title {
+    font-size: 14px;
+  }
+
+  .odt-info-text {
+    font-size: 12px;
+  }
+}
